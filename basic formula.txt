@@ -106,3 +106,20 @@ pwd :: -> mein kaha kaam kar rha hu
     author email : ae
     %h --> file name
 --> format of the string can be changed
+
+
+*** to unstaged a file
+--> git restore --staged file-name
+
+*** hot to unmodifies a file
+-->git checkout -- file name  --> only chechkout when the file is not changed if the file staged no chenge will transform according to previuos commit
+--> git checkout -f --> for all files more than 1  --> directly moved to previous commit even if if all the files are staged
+
+
+PULL -> saara data repository se lana including history and all data
+PUSH -> while only data that is code to the remote repository
+
+*** git remote (remote is a website or repository that is present on the internet)
+in our case github is the host of  git repository ( ie which 
+
+-->
