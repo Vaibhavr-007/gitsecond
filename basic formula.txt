@@ -1,3 +1,7 @@
+************* basic and important codes ************
+
+
+
 **copy paste at hit bash shift then enter
 ** to exit --> press q and then enter
 
