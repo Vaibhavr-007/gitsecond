@@ -117,9 +117,31 @@ pwd :: -> mein kaha kaam kar rha hu
 
 
 PULL -> saara data repository se lana including history and all data
-PUSH -> while only data that is code to the remote repository
+PUSH -> while only data that is code to the remote repository(matlab sirf incremental push hoga)
 
-*** git remote (remote is a website or repository that is present on the internet)
+*** git remote***** (remote is a website or repository that is present on the internet)
 in our case github is the host of  git repository ( ie which 
 
--->
+--> to pehle hame ek remote create karna padta hai 
+ex ***git remote add origin git@github.com:Vaibhavr-007/gitsecond.git
+--> origin is website ka naam hai(naam kuch bhi jo skta hai) --> website yaani github pe se jo uthayi hai (matlab git url ka naam origin rkh dia)
+
+--> git remote -v ---> ye code batayega ki push aur pull ka url kya hai bas
+
+
+
+**** how to  add permission
+
+
+IE TO MAKE SSH KEY
+settings -> ssh keys-> uske baad generat ssh key (search on google)
+type title ->
+commands sequence
+1) ssh-keygen -t ed25519 -C "your_email@example.com"
+2) copy path and type
+	cat copied-path and we can also do "tail copied- path"
+3) now ssh key formed copy it and put it link and add ssh key
+4) now successfully pushed
+
+
+--> git push origin master
