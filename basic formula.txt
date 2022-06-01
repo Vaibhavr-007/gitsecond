@@ -1,0 +1,108 @@
+**copy paste at hit bash shift then enter
+** to exit --> press q and then enter
+
+*** AUTHOR -> JO FILE BANATA HAI
+*** COMMIT --> JO FILE COMMIT KARTA HAI 
+
+GIT IS A VERSION CONTROL SYSTEM
+-> EASILY RECOVER FILES
+-> WHO INTRODUCED ISSUE AND WHEN
+-> ROLL BACK TO PREVIOSLY WORKING STATE
+
+
+GIT FREE HAI 
+BUT GITHUB EK WEBSITE HAI JO GIT REPOSITRIES KO MANAGE KARTA HAI
+BIT BUCKET ,GITLAB ARE ALSO OTHER WEBSITES
+
+
+GIT FEATURES
+-> SNAPSHOT CAPTURE
+-> .GIT FOLDER BANANA PADTA HAI USME PURI HISTORY DEDEGA IT IS AN HIDDEN FOLDER
+-> ALMOST EVERY OPERATION IS LOCAL
+-> AFTER WORKING WE CAN PUSH IT INTO GITHUB SERVER(CENTRALISED SERVER)
+-> REMOTE REPOSITORIES(ALL REPOSITRIES IN SERVERS OF GITHUB)
+-> GIT HAS INTEGRITY
+-> CHECKSUM IS IMPORTANT(IT REMAINS SAME WHILE TRANSWERING OF FILES DURING PUSHING OF PULLING OF FILES)
+-> CHECKSUM ISLIYE HOTA HAI KI JO FILE DOWNLOAD KARI WO SAME KI NHI HAI
+-> AGAR KUCH CHANGES HONGE DURING DOWNLOAD THIS MEANS KUCH CHANGE HUA HAI BEECH MEIN
+
+
+GIT INSTALLATION
+-> GIT COMMAND LINE TOOL
+-> GIT BASH(TERMINAL PROGRAM)
+
+pwd :: -> mein kaha kaam kar rha hu
+
+
+// git config --global user.name "name here" --> by this we can change our name in gitbash terminal
+// git config --global user.email "email here" --> we can change email here
+// git config --list --> by this we can get whole list
+// git config --global core.editor "editor-name" --.we can change editor in lnux ************************
+// git config user.name --> we can get name
+
+
+*** git 3 stage architecture
+
+--> working directory ( jo hame files dikhti hai windows mein)
+--> staging area ( woh file jo chahenge ki hum ki commit mein jaye ( ismein basicaaly check karte hai)
+--> git directory ( .git namak folder hota hai jaha pe saari files hongi , jo ki compressed hongi)
+
+
+** basics
+
+--> git status-> to check the status of repository
+--> git init -> initialising the git repository
+
+--> branch by default master hoti hai
+--> git add --a   or git add .--> to put all files in the folder into staging now changes is to be committed
+--> git commit -m  "initial commit(basically it is message)"---> ab commit ho jayegi
+--> git log  --> isse timing aa jayega ja jab commit kiya hai git pe
+--> hit add file-name --> isse ek particular file add ho jayegi staging area
+--> rm -rf .git --> .git file repository ki delete kar de gi
+--> git clone name --> clone karlega file ko
+
+
+
+
+--> "ls" se saari files aa jayengi
+
+
+// git ignore --> in order to ignore few files during commit 
+ --> we must create touch .gitignore and enter all files names that ti be ignore
+--> in order to remove all log files in repository we must use *.log in gitignore
+--> we can also ignore whole directory or folder by addign dir/ in .gitignore file
+--> by default "git" ignore empty folder
+
+
+-->git diff --> compare staging area with working directory
+-->git diff --staged--> compare staging area with previosly commited value
+
+
+*** skipping the staging area
+--> git commit -a -m --> saari tracked file ko staged karke directly commit kardega
+--> but koi untracked file directly commit nhi hogi pehle usko add (stage karna padega)
+
+
+*** moving and renaming the files in git
+--> git rm file-name --> automatically remove the file and as well add it to the staging area
+--> git mv from file-name to file-name --> automaticaaly renamed and put it into staging area
+
+--> if we want to untrack a file from a repository then we have to do
+--> git rm --cached db.acccdb -->to untrack a file( if we want to store any file into .gitignore after tracking then we can use this)
+
+
+
+**** viweing and changing commits in git 
+
+--> git log -p --> will provide all diff values which are either being modified or removed during or before commit
+--> git log -p -n --> will provide only n diff of modification or removed elements int the repository\
+--> git log --stat --> will provide short summary of commit and changes(over deletion and addition)
+--> git log --pretty=oneline --> will provid whole info about commit in one line
+--> git log --pretty=short --> short mein dikhayega
+--> git log --pretty=full -->todha jayada dikhayega information
+--> git log --since=2.days  --> 2 dino mein jo jo commit hua hai vo dikha dega
+--> git log --pretty=format:"%h --%an"
+--> author name : an
+    author email : ae
+    %h --> file name
+--> format of the string can be changed
