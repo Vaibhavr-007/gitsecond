@@ -149,3 +149,7 @@ commands sequence
 
 
 --> git push origin master
+
+
+Correction: You just can't directly commit on master branch and also the origin url should be from your forked repository. 
+Please first fork and then clone the forked version to your local repository. Also, make a new branch for an issue you solve; then commit, push and open pull request.
